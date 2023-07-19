@@ -15,14 +15,12 @@ import java.util.List;
 public class TaskOfMovement implements Runnable{
     @Override
     public void run() {
-        System.out.println("Животные начинают движение");
-        System.out.println("--------------------------");
+
 
         List<Animal> allAnimals = IslandModel.getInstance().getAllAnimal().
                 stream().filter(animal -> animal.getStep() > 0).toList();
         allAnimals.forEach(Animal::move);
 
-        System.out.println("Животные закончили движение");
-        System.out.println("--------------------------");
+
     }
 }

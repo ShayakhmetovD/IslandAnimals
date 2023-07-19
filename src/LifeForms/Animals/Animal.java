@@ -65,7 +65,7 @@ public abstract class Animal extends LifeForm implements Reproduction {
     // Метод реализующий процесс передвижения
     public void move(){
         Random random = new Random();
-        int randomCells = random.nextInt(getStep()) + 1;
+        int randomCells = random.nextInt(getStep() + 1);
 
         // Генерируем случайное направление (вверх, вниз, влево или вправо)
         int direction = random.nextInt(4);

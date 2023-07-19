@@ -26,7 +26,7 @@ public class TaskOfReducingEnergyHP implements Runnable{
 
 
         if (Simulation.getInstance().getTimeNow() / 60 >= 3) {
-            reducingHP = reducingHP * 2;
+            reducingHP = reducingHP * 1.5;
         }
 
         for (Animal animal:animalList) {

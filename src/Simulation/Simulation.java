@@ -21,9 +21,9 @@ import java.util.concurrent.TimeUnit;
 /** Данный класс является реализацией симулиции процесса жизни на острове */
 public class Simulation {
     private final long startTime;
-    private final int countHerbivores = 20; // Количество травоядных
-    private final int countPlants = 20; // Количество растений
-    private final int countPredators = 10; // Количество хищников
+    private final int countHerbivores = 40; // Количество травоядных
+    private final int countPlants = 40; // Количество растений
+    private final int countPredators = 25; // Количество хищников
     private static volatile Simulation instance;
     private volatile ScheduledExecutorService executorService;
 

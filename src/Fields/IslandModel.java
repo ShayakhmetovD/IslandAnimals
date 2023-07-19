@@ -12,8 +12,8 @@ import java.util.concurrent.ThreadLocalRandom;
 public class IslandModel {
 
     private Locations[][] locations;
-    private int x = 15;
-    private int y = 15;
+    private final int x;
+    private final int y;
     private static volatile IslandModel instance;
 
 
@@ -36,7 +36,7 @@ public class IslandModel {
         if(instance == null){
             synchronized (IslandModel.class){
                 if(instance == null){
-                    instance = new IslandModel(15, 15);
+                    instance = new IslandModel(100, 20);
                 }
             }
         }

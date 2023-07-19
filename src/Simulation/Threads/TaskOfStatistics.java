@@ -44,12 +44,6 @@ public class TaskOfStatistics implements Runnable{
         }
     }
 
-    /**
-     * Проверить, истекло ли заданное время моделирования
-     *
-     * @param timeNow Текущее время моделирования
-     * @return isTimeOver true, если время истекло, иначе - false
-     */
     private boolean checkTime(long timeNow) {
         return timeNow / 60 >= 5;
     }
@@ -60,7 +54,7 @@ public class TaskOfStatistics implements Runnable{
             System.out.println("ПОБЕДА!!! ВЫ ПРОДЕРЖАЛИСЬ 5 МИНУТ!");
             System.out.println("----------------------------------");
         } else {
-            System.out.printf("--- ДЕНЬ %d ---", cycle);
+            System.out.printf("   Цикл --- %d    ", cycle);
             cycle++;
             System.out.println();
         }

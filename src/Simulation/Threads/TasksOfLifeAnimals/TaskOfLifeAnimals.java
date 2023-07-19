@@ -19,6 +19,7 @@ public class TaskOfLifeAnimals implements Runnable{
     private final CountDownLatch latch; // класс, реализующий процесс ожидания завершения некоторых операций
 
     public TaskOfLifeAnimals() {
+
         latch = new CountDownLatch(3);
         eating = new TaskOfEating(latch);
         reproduction = new TaskOfReproduction(latch);
